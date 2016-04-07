@@ -50,7 +50,7 @@ class shortedUrl(webapp.webApp):
                             + '</html></body>'
 
             elif int(index) <= int(self.assignamentNumber):
-                url = self.shortUrls[str(index)]
+                url = self.shortUrls[int(index)]
                 if url != "":
                     httpCode = '200 OK'
                     header = ""
